@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bagratica Theme</title>
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $('.sliderow').slick({
+                slidesToShow: 4, 
+                slidesToScroll: 1,
+                infinite: true, 
+                arrows: true, 
+            });
+            });
+            $(document).ready(function(){
+            $("#shop-link").click(function(){
+                $("#shop-popup").show();
+            });
+            $(".cancel").click(function(){
+                $("#shop-popup").hide();
+            });
+        });
+
+        </script>
+
+   </head>
+   <body class="template-index not-mobile">
+      <section>   
+          <div id="shopify-section-header" class="shopify-section">
+              <div class="topbar">
+                  <div>
+                      <div class="form-group">
+                          <div class="dropdown">
+                              <button class="dropdown-toggle select-lang" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  English
+                              </button>
+                              <div class="dropdown-menu options-lang" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 19px, 0px);">
+                              <a class="dropdown-item" href="#">English</a>
+                              <a class="dropdown-item" href="#">German</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="dropdown">
+                              <button class="dropdown-toggle select-currency" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  USD
+                              </button> 
+                              <div class="dropdown-menu second options-currency" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 19px, 0px);">
+                                  <a class="dropdown-item" href="#">USD</a>
+                                  <a class="dropdown-item" href="#">EUR</a>
+                                  <a class="dropdown-item" href="#">TRY</a>
+                                  <a class="dropdown-item" href="#">CAD</a>
+                                  <a class="dropdown-item" href="#">JPY</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="msg-topbar">MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”</div>
+              </div>
+              <div class="header-mobile">
+                  <div class="m-menu flex row">
+                      <div class="flex-col push-menu-mobile">
+                      <span></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <search-section>
+
+            <div class="search-bar off">
+              <div class="container">
+                  <div class="close-search">
+                  <i class="fa fa-times-circle"></i>
+                  </div>
+              </div>
+            </div>
+
+            <div class="header-desktop">
+                <div class="flex-row">
+          
+                    <div class="flex-col logo-desktop">
+                        <a href="/index">
+                          <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/logo.png?v=1614804868" class="logo-white">
+                        </a>
+                    </div>
+            
+                    <div class="flex-col nav-desktop">
+                        <ul>
+                          <li class="icon-search-wrap"><i class="fa fa-search"></i></li>
+                          <li><a style="color: white;" href="/account/login">Login</a></li>
+                          <li><a  style="color: white;" href="/account/register">Registor</a></li>
+                          <li><a style="color: white;" href="/account/my wishlist">My Wishlist</a></li>
+                          <li><a style="color:white;" class="cart-slide" href="#">cart<span class="badge">0</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       </search-section>
+
+
+      <section>
+
+        <div class="sidebar-nav-wrap" style="left: 0px;">
+             <div class="sidebar-nav">
+                 <ul>  
+                    <li>
+                       <a href="/">Home</a>
+                    </li>
+                    <li class="sub-menu-wrap">
+                       <a href="#" class="sub-menu">Style 2020</a>                
+                    </li>       
+                    <li class="sub-menu-wrap">
+                      <a href="#" class="sub-menu" id="shop-link">Shop</a>
+                  
+                        <section class="shop-modal" style="display:none;" id="shop-popup">
+                        <div class="cancel-wrapper">
+                          <div class="cancel">
+                            <span></span>
+                          </div>
+                        </div>
+                         <div class="container pos">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h2 id="inner-text">Shop</h2>
+                            </div> 
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 left-col">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <a href="#" class="Popup-Content">
+                                    <span>Denim</span>
+                                  </a>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="#">
+                                        <span>Slim Fit</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <span>Trending</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-4">
+                                  <a href="#" class="Popup-Content">
+                                    <span>Chinos</span>
+                                  </a>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="#">
+                                        <span>Slim Fit</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <span>Baggie</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-4">
+                                  <a  href="#" class="Popup-Content">
+                                    <span>Shorts</span>
+                                  </a>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="#">
+                                        <span>Boxers</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <span>Gym wears</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+
+                              </div>
+                            </div>
+                            <div class="col-md-6 right-col">
+                              <div class="row-two">
+                                <div class="col-md-6 col-sm-12" style="left: 190px;">
+                                  <a href="title">
+                                    <img  src="https://bagratica-theme.myshopify.com/cdn/shop/files/ian-dooley-C6BrEIucDDU-unsplash.jpg?v=1614810415" alt="">
+                                  </a>
+                                </div>
+                                <div class="col-md-6 col-sm-12" style="display: flex; flex-direction: column-reverse;">
+                                  <a href="title">
+                                    <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/ian-dooley-WQR_1ORmg2I-unsplash.jpg?v=1614810415" alt="">
+                                  </a>
+                                </div>
+                                <div class="col-md-6">
+                                  <a href="title">
+                                    <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/ian-dooley-8HqPXTToMn0-unsplash.jpg?v=1614810431"alt="">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+                        </div>                 
+                    </li> 
+                    <li>
+                       <a href="/blogs/news">Blog</a> 
+                    </li>
+                    <li>
+                       <a href="/pages/faq">FAQ</a> 
+                    </li>
+                    <li>
+                       <a href="/pages/about">About</a>
+                    </li> 
+                    <li>
+                       <a href="/pages/contact">Contact</a>
+                    </li> 
+                </ul>
+                <div class="popup-menu" id="popup">
+
+            </div>
+        </div>
+
+      </section>
+
+
+    <section class="main-banner" id="main-banner">
+
+        <div class="banner-holder" style="background-image: url('https://bagratica-theme.myshopify.com/cdn/shop/files/felipe-galvan-AhfrA5VQNpM-unsplash.jpg?v=1614810415');">
+          <a href="#">
+          <img class="banner-image-for-mobile" src="	https://bagratica-theme.myshopify.com/cdn/shop/files/felipe-galvan-AhfrA5VQNpM-unsplash.jpg?v=1614810415" alt="banner-image">
+          </a>
+          </div>
+        <div class="banner-content text-right">
+        <div class="main-heading animated">
+          <h1>SPRING SUMMER</h1>
+        </div>
+        <div class="des animated">
+          <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+        </div>
+              
+        <div class="button animated">
+          <a href="/collections/shop-for-her" style="margin-left:auto; color: white;">
+            Shop The Collection
+          </a>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="shop-for-her-him" id="section2">
+        <ul class="banner-two row">
+          <li class="col-lg-6 col-md-12 col-sm-12">
+        <div class="shop-for-her" style="background-image: url(//https://bagratica-theme.myshopify.com/cdn/shop/collections/for-her.png?v=1584012495)">
+          <img src="https://bagratica-theme.myshopify.com/cdn/shop/collections/for-her.png?v=1584012495" alt="image">
+        </div>
+
+        <div class="des-banner">
+          <h2>SHOP FOR HER</h2>
+        <div class="banner-text">
+          <p>DOBORTIS SCELERISQUE BLANDIT LOREM COSMOPOLIS</p>
+        </div>
+
+          <a href="/collections/shop-for-her" class="banner-bt">Shop Now</a>
+        </div>
+          </li>
+          <li class="col-lg-6 col-md-12 col-sm-12">
+
+        <div class="shop-for-her shop-for-him" id="ip" style="background-image: url(//bagratica-theme.myshopify.com/cdn/shop/collections/for-him.png?v=1584007766)">
+          <img style="height:100%;" src="https://bagratica-theme.myshopify.com/cdn/shop/collections/for-him.png?v=1584007766" alt="image"> 
+          
+        </div>
+
+        <div class="des-banner">
+          <h2>SHOP FOR HIM</h2>
+        <div class="banner-text">
+          <p>DOBORTIS SCELERISQUE BLANDIT LOREM COSMOPOLIS</p>
+        </div>
+          <a href="/collections/shop-for-him" class="banner-bt">Shop Now</a>
+        </div>
+          </li>
+        </ul>
+
+     </section>
+
+    <div id="shopify-section-1576093535782" class="shopify-section"><section class="shop-for-her-him tranding-now" id="section3">
+
+        <ul class="banner-two row">
+          <li class="col-lg-12 col-md-12 col-sm-12">
+        <div class="shop-for-her tranding-image" style="background-image: url('https://bagratica-theme.myshopify.com/cdn/shop/files/parallex_509b53e3-3ad6-496c-857b-b439443b1a49.jpg?v=1614810459');">
+          <!--<img src="https://bagratica-theme.myshopify.com/cdn/shop/files/parallex_509b53e3-3ad6-496c-857b-b439443b1a49.jpg?v=1614810459" alt="image">-->
+        </div>
+
+          <div class="des-banner">
+          <div class="heading_top">
+              COSMOPOLITAN
+          </div>
+            <h2 id="top-identifier-1">#TRENDING NOW</h2>
+          <div class="banner-text">
+            <p>DOBORTIS SCELERISQUE BLANDIT COSMOPOLIS DE LOREMOUS<br>DELIS ELEMENTUM TRISTIQUE CONSECTETUR QUAM URNA VEHICULA LACUS NEC FERMENTUM.</p>
+          </div>
+                    
+            <a href="/collections/frontpage" class="banner-bt">shop now</a>
+                    
+          </div>
+            </li>
+            <a href="#section4" class="goto-next scrolly"></a>
+          </ul>
+
+          <div class="three-blocks" id="three-blocks">
+          <div class="row">
+                        
+          <div class="col-md-4 text-center coloum">
+          <div class="text-area" style="color: black">
+            <p>FREE SHIPPING WORLDWIDE. NO MINIMUM</p>
+          </div>
+          </div>
+                  
+          <div class="col-md-4 text-center coloum">
+          <div class="text-area" style=" color: red">
+            <p>20% OFF YOUR FIRST ORDER</p>
+          </div>
+          </div>
+                  
+          <div class="col-md-4 text-center coloum">
+          <div class="text-area" style=" color: black">
+            <p>SECURE CHECKOUT GUARANTEE</p>
+          </div>
+          </div> 
+          </div>
+          </div>
+    </div>
+    </section>
+
+    <section4>
+
+          <div class="container">
+              <div class="widget-title">  
+                  <h2 style="text-align: center; margin-top: 40px; margin-bottom: 40px;">Featured Products</h2>
+              </div>
+              <div class="feature-collecton">
+                <div class="row">
+            
+                <div class="col-lg-3 col-md-3 col-sm-6 coloum">
+                  <div class="inner-product">
+                      <div class="inner-top">
+                          <div class="product-top">
+                            <div class="product-image">
+                                <div class="image-container">
+                                    <img id="img1" src="https://bagratica-theme.myshopify.com/cdn/shop/products/3_1bd8fb66-f20a-40d4-82fe-0cc507e37434.jpg?v=1584010499" alt="image">
+                                    <img id="img2" src="https://bagratica-theme.myshopify.com/cdn/shop/products/1_930d721b-89c5-4317-8654-ccf075bb7924.jpg?v=1584010499" class="img-overlay">
+                                </div>
+                                <div class="product-label">
+                                    <strong class="label" data-translate="products.product.sale">hot</strong>
+                                </div>
+                                <!-- <div class="product">
+                                    <div class="quick-button">
+                                        <button type="button" class="quickview">Quick View</button>
+                                    </div>          
+                                </div> -->
+                              </div>
+                          </div>
+                        <div class="product-buttom">
+                            <div class="product-vendor">Leather jacket for Girls - Black</div>
+                              <a href="#" class="porduct-title">
+                                <span>
+                              <div class="des animated">
+                                <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                              </div>
+                                </span>
+                              </a>
+                          <div class="price-box">
+                              <span class="old-price"><span class="money">$2000.00</span></span>
+                              <span class="special-price"><span class="money">$1200.00</span></span>
+                          </div>
+                          <div class="action">
+                            <form action="#">
+                                <button id="selectButton" type="button">Select options</button>
+                            </form>
+                        </div>
+  
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-lg-3 col-md-3 col-sm-6 coloum">
+                    <div class="inner-product">
+                      <div class="inner-top">
+                          <div class="product-top">
+                              <div class="product-image">
+                                  <div class="image-container">
+                                      <img id="img1" src="https://bagratica-theme.myshopify.com/cdn/shop/products/5.jpg?v=1584011599" alt="image">
+                                      <img id="img2" src="https://bagratica-theme.myshopify.com/cdn/shop/products/1.jpg?v=1584011599" class="img-overlay">
+                                  </div>
+
+                              <div class="product-label">
+                                <strong class="label" data-translate="products.product.sale">hot</strong>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="product-buttom">
+                            <div class="product-vendor">Leather Jacket -  Brown</div>
+                              <a href="#" class="porduct-title">
+                                <span>
+                                <div class="des animated">
+                                  <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                                </div>
+                                </span>
+                              </a>
+              
+                            <div class="price-box">
+                                <span class="old-price"><span class="money">$5.00</span></span>
+                                <span class="special-price"><span class="money">$2.00</span></span>
+                            </div> 
+                            <div class="action">
+                              <form action="#">
+                                  <button id="selectButton" type="button">Select options</button>
+                              </form>
+                            </div>
+                                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+          <div class="col-lg-3 col-md-3 col-sm-6 coloum">
+              <div class="inner-product">
+                <div class="inner-top">
+                    <div class="product-top">
+                      <div class="product-image">
+                          <div class="image-container">
+                            <img id="img1" src="https://bagratica-theme.myshopify.com/cdn/shop/products/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg?v=1584007091" alt="image">
+                            <img id="img2" src="https://bagratica-theme.myshopify.com/cdn/shop/products/himanshu-dewangan-SnSUXYAlLZg-unsplash.jpg?v=1584007091" class="img-overlay">
+                          </div>    
+                          <div class="product-label">
+                                <strong class="label" data-translate="products.product.sale">hot</strong>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="product-buttom">
+                    <div class="product-vendor">Check Shirt - Men</div>
+                        <a href="#" class="porduct-title">
+                          <span>
+                            <div class="des animated">
+                                <div>
+                                    <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                                </div>
+                            </div>
+
+                        <div class="price-box">
+                          <span class="old-price"><span class="money">$20.00</span></span>
+                          <span class="special-price"><span class="money">$1,200.00</span></span>
+                        </div> 
+                        <div class="action">
+                          <form action="#">
+                              <button id="selectButton" type="button">Select options</button>
+                          </form>
+                        </div>              
+                  </div>
+                </div>
+              </div>
+          </div>
+                
+          <div class="col-lg-3 col-md-3 col-sm-6 coloum">
+
+              <div class="inner-product">
+                <div class="inner-top">
+                    <div class="product-top">
+                      <div class="product-image">
+                          <div class="image-container">
+                              <img id="img1" src="https://bagratica-theme.myshopify.com/cdn/shop/products/himanshu-dewangan-3vy8JquXGsA-unsplash.jpg?v=1584004896" alt="image">
+                              <img id="img2" src="https://bagratica-theme.myshopify.com/cdn/shop/products/himanshu-dewangan-dGiap4wWuMY-unsplash.jpg?v=1584004896" class="img-overlay">
+                          </div>
+                        <div class="product-label">
+                          <strong class="label" data-translate="products.product.sale">hot</strong>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="product-buttom">
+                      <div class="product-vendor">Painted Shirt</div>
+                        <a href="#" class="porduct-title">
+                          <span>
+                            <div class="des animated">
+                              <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                            </div>
+                          </span>
+                        </a>
+                                
+                        <div class="price-box">
+                          <span class="old-price"><span class="money">$10.00</span></span>
+                          <span class="special-price"><span class="money">$5.00</span></span>
+                        </div>  
+                        <div class="action">
+                          <form action="#">
+                              <button id="selectButton" type="button">Select options</button>
+                          </form>
+                        </div>           
+                    </div>
+                 </div>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+   </section4>
+
+
+      <div>
+        <section class="top-brand">
+            <div class="container">
+                <div id="top-identifier-2" class="widget-title text-center">
+                    <h2>TOP BRANDS</h2>
+                    <div class="description">
+                        <p>Naminos condimentum dui id enim selementum de tincidunts cosmo de lorem metropolis</p>
+                    </div>
+                </div>
+                <div class="sliderow">
+                    <div class="col-lg-3 col-md-3 col-sm-6 coloum">
+                        <div class="product-image">
+                            <a>
+                                <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/brand-logo1.png?v=1614805313" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 coloum">
+                        <div class="product-image">
+                            <a>
+                                <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/brand-logo2.png?v=1614805313" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 coloum">
+                        <div class="product-image">
+                            <a>
+                                <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/brand-logo3.png?v=1614805313" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 coloum">
+                        <div class="product-image">
+                            <a>
+                                <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/brand-logo4.png?v=1614805313" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 coloum">
+                      <div class="product-image">
+                          <a>
+                              <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/brand-logo5.png?v=1614805313" alt="image">
+                          </a>
+                      </div>
+                  </div>
+
+                </div>
+            </div>
+        </section>
+      </div>
+
+<section class="instagram-sec" id="instagram-sec">
+    
+<div class="container">
+<div class="collecton">
+<div class="widget-title text-center">   
+  <h3>#THE BAGRATICA ON INSTAGRAM</h3>
+  <p>DISCOVER AND SHARE YOUR BAGRATICA MOMENTS WITH US!</p>
+</div>
+<div class="row">
+            
+<div class="col-lg-3 col-md-3 col-sm-6 coloum">
+<div class="product-image">
+  <a>
+  <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/himanshu-dewangan-zf53zxL5-6Y-unsplash.jpg?v=1614810419" alt="image">
+  </a>
+      
+</div>
+</div>
+            
+<div class="col-lg-3 col-md-3 col-sm-6 coloum">
+<div class="product-image">
+  <a>
+  <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/5.jpg?v=1614810459" alt="image">
+  </a>
+        
+</div>
+</div>
+              
+<div class="col-lg-3 col-md-3 col-sm-6 coloum">
+<div class="product-image">
+  <a>
+  <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/himanshu-dewangan-SnSUXYAlLZg-unsplash.jpg?v=1614810419" alt="image">
+  </a> 
+</div>
+</div>
+              
+<div class="col-lg-3 col-md-3 col-sm-6 coloum">
+<div class="product-image">
+  <a>
+  <img src="https://bagratica-theme.myshopify.com/cdn/shop/files/3.jpg?v=1614810419" alt="image">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<div class="button text-center">
+  <button type="button" onclick="window.location.href='http://instagram.com'">View Our Gallery</button>
+</div>
+</div>
+</section> 
+
+<footer id="footer">
+<div class="container">
+       
+<div class="footer-newsletter text-center">
+  <h3>Newsletter Signup</h3>
+<div class="des">
+  <span>Receive our latest updates about our products and promotions.</span>
+</div>
+<div class="newsletter">
+
+<form method="post" action="/contact#Contact_custom-footer" id="Contact_custom-footer" accept-charset="UTF-8" class="contact-form" novalidate="novalidate"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+  <input type="hidden" name="contact[tags]" value="newsletter">
+  <input type="email" name="contact[email]" id="Contact_custom-footer-email" class="input-group__field" value="" placeholder="Email address" aria-label="Email address" aria-required="true" autocorrect="off" autocapitalize="off">
+  <span class="input-group-btn">
+<button type="submit" class="btn" name="subscribe"> 
+  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</button>
+  </span>
+</form>
+  
+</div>
+</div>
+      
+<div class="footer-top">
+<div class="row">
+
+<div class="col">
+  <h3><span>Shop</span></h3>
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Collections</a></li>
+  <li><a href="#">Shop</a></li>
+  <li><a href="#">Accessories</a></li>
+  <li><a href="#">LookBook</a></li>
+  <li><a href="#">#Trend</a></li>  
+</ul>
+
+</div>
+          
+<div class="col"> 
+  <h3><span>Footer menu</span></h3>
+
+<ul>
+              
+  <li><a href="/pages/about">About</a></li>
+  <li><a href="/pages/contact">Contact</a></li>
+  <li><a href="/collections">All Collections</a></li>
+</ul>
+</div>
+          
+<div class="col">
+  <h3><span>Shop</span></h3>
+    
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Collections</a></li>
+  <li><a href="#">Shop</a></li>
+  <li><a href="#">Accessories</a></li>
+  <li><a href="#">LookBook</a></li>
+  <li><a href="#">#Trend</a></li>
+</ul>
+
+</div>
+          
+<div class="col">
+  <h3><span>Main menu</span></h3>  
+  
+<ul>
+              
+  <li><a href="/account/login">Login</a></li>
+  <li><a href="/account/register">Registor</a></li>
+  <li><a href="https://bagratica-theme.myshopify.com/a/mswishlist">My Wishlist</a></li>
+</ul>
+
+</div>
+          
+<div class="col">
+  <h3><span>STAY CONNECTED</span></h3>
+
+<ul class="social-icons">
+  <li><a href=""><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a href=""><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+  <li><a href=""><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a href=""><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+            
+<div class="text" style="display: flow-root;">
+  <span>LIKE US on FACEBOOK</span>
+  <a href="#"><img src="https://cdn.shopify.com/s/files/1/0259/8141/9579/files/like-share.png?v=1576179816" alt="icon"></a>
+</div>
+</div>  
+</div>
+</div>
+       
+<div class="footer-bottom text-center">
+  <address>
+  <p>© 2023 <a href="/" title="">Bagratica Theme</a> Demo. eCommerce Software <a target="_blank" rel="nofollow noopener" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore" aria-describedby="a11y-new-window-external-message">Powered by Shopify</a>. 
+            <br>Shopify Themes &amp; Templates by <a href="#">Halothemes.com</a></p>
+  </address>
+</div>
+ 
+</div>
+  
+</footer>
+</body>
+</html>
